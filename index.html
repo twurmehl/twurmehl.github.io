@@ -5,14 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Cappella Nova Unterwalden</title>
+    <meta name="twitter:title" content="Cappella Nova Unterwaden">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/background.jpg">
+    <meta name="twitter:image" content="assets/img/Capella_Nova_160619_CHH3873a.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Icon016.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Icon032.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/Icon180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/Icon192.png">
+    <link rel="icon" type="image/png" sizes="513x512" href="assets/img/Icon512.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body>
@@ -23,12 +35,12 @@
                     <div
                         class="collapse navbar-collapse text-uppercase" id="navcol-1" style="font-weight: bold;">
                         <ul class="nav navbar-nav mx-auto">
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Home</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#termine">Termine</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#about">Über uns</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Fotos</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Audio</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Kontakt</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#fotos">Fotos</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#audio">Audio</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#kontakt">Kontakt</a></li>
                         </ul>
                 </div>
         </div>
@@ -38,16 +50,18 @@
         <div id="hero-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col"><button class="btn btn-link btn-block arrow-button" type="button"><i class="fas fa-chevron-down swing animated"></i></button></div>
+                    <div class="col"><a class="btn btn-link btn-block arrow-button" role="button" href="#termine"><i class="fas fa-chevron-down swing animated"></i></a></div>
                 </div>
             </div>
         </div>
     </section>
-    <section data-aos="fade-up" data-aos-duration="700" id="termine" class="content-section">
+    <section data-aos="fade-up" data-aos-duration="700" data-aos-once="true" id="termine" class="content-section">
         <div class="container">
             <h1>Termine</h1>
             <div class="carousel slide" data-ride="carousel" id="carousel-1">
                 <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/flyer/2020-04-10.jpg" alt="Slide Image"></div>
+                    <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/flyer/2020-04-05.jpg" alt="Slide Image"></div>
                     <div class="carousel-item"><img class="w-100 d-block" src="assets/img/flyer/2019-12-21.jpg" alt="Slide Image"></div>
                     <div class="carousel-item"><img class="w-100 d-block" src="assets/img/flyer/2019-04-19(2).jpg" alt="Slide Image"></div>
                     <div class="carousel-item"><img class="w-100 d-block" src="assets/img/flyer/2019-04-19(1).jpg" alt="Slide Image"></div>
@@ -58,13 +72,13 @@
                     <div class="carousel-item"><img class="w-100 d-block" src="assets/img/flyer/2018-03-29.jpg" alt="Slide Image"></div>
                     <div class="carousel-item"><img class="w-100 d-block" src="assets/img/flyer/2017-12-08.jpg" alt="Slide Image"></div>
                     <div class="carousel-item"><img class="w-100 d-block" src="assets/img/flyer/2017-05-25.jpg" alt="Slide Image"></div>
-                    <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/flyer/2017-05-09.jpg" alt="Slide Image"></div>
+                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/flyer/2017-05-09.jpg" alt="Slide Image"></div>
                 </div>
                 <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button"
                         data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-1" data-slide-to="0"></li>
-                    <li data-target="#carousel-1" data-slide-to="1"></li>
+                    <li data-target="#carousel-1" data-slide-to="1" class="active"></li>
                     <li data-target="#carousel-1" data-slide-to="2"></li>
                     <li data-target="#carousel-1" data-slide-to="3"></li>
                     <li data-target="#carousel-1" data-slide-to="4"></li>
@@ -73,12 +87,14 @@
                     <li data-target="#carousel-1" data-slide-to="7"></li>
                     <li data-target="#carousel-1" data-slide-to="8"></li>
                     <li data-target="#carousel-1" data-slide-to="9"></li>
-                    <li data-target="#carousel-1" data-slide-to="10" class="active"></li>
+                    <li data-target="#carousel-1" data-slide-to="10"></li>
+                    <li data-target="#carousel-1" data-slide-to="11"></li>
+                    <li data-target="#carousel-1" data-slide-to="12"></li>
                 </ol>
             </div>
         </div>
     </section>
-    <section data-aos="fade-up" data-aos-duration="700" id="about" class="content-section">
+    <section data-aos="fade-up" data-aos-duration="700" data-aos-once="true" id="about" class="content-section">
         <div class="container">
             <h1>Über uns</h1><img class="img-fluid" id="cappella-nova" src="assets/img/Capella_Nova_160619_CHH3873a.jpg">
             <p><strong>Cappella Nova Unterwalden&nbsp;</strong>ist ein Projekt-Ensemble, das jährlich mehrmals an verschiedenen Orten, besonders aber in der Innerschweiz auftritt. Seine Mitglieder sind&nbsp; Gesangs – Studierende, Sängerinnen und Sänger,
@@ -116,8 +132,7 @@
                 <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/portraits/SAndres.jpg">
                     <div class="card-body">
                         <h4 class="card-title">Susanne Andres</h4>
-                        <h6 class="text-muted card-subtitle mb-2">Mezzosopran</h6>
-                    </div>
+                        <h6 class="text-muted card-subtitle mb-2">Mezzosopran</h6><a class="btn btn-link weblink" role="button" href="https://susanneandres.ch/" target="_blank"><i class="fas fa-external-link-alt"></i>&nbsp;susanneandres.ch</a></div>
                 </div>
                 <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/portraits/armin-wuersch.jpg">
                     <div class="card-body">
@@ -128,8 +143,7 @@
                 <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/portraits/tobias-wurmehl.jpg">
                     <div class="card-body">
                         <h4 class="card-title">Tobias Wurmehl</h4>
-                        <h6 class="text-muted card-subtitle mb-2">Bassbariton</h6>
-                    </div>
+                        <h6 class="text-muted card-subtitle mb-2">Bassbariton</h6><a class="btn btn-link weblink" role="button" href="https:/www.tobiaswurmehl.ch/" target="_blank"><i class="fas fa-external-link-alt"></i>&nbsp;tobiaswurmehl.ch</a></div>
                 </div>
                 <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/portraits/Fotos_10.11%20(5%20von%2016).jpg">
                     <div class="card-body">
@@ -140,14 +154,72 @@
             </div>
         </div>
     </section>
-    <section id="fotos">
+    <section data-aos="fade-up" data-aos-duration="700" data-aos-once="true" id="fotos">
         <div class="container content-section">
             <h1>Fotos</h1>
+            <div class="card-columns">
+                <div class="card"><a href="assets/img/Capella_Nova_160619_CHH3873a.jpg" data-lightbox="fotos"><img class="img-fluid" src="assets/img/Capella_Nova_160619_CHH3873a.jpg"></a></div>
+                <div class="card"><a href="assets/img/055.JPG" data-lightbox="fotos"><img class="img-fluid" src="assets/img/055.JPG"></a></div>
+                <div class="card"><a href="assets/img/058.JPG" data-lightbox="fotos"><img class="img-fluid" src="assets/img/058.JPG"></a></div>
+                <div class="card"><a href="assets/img/IMG-20180519-WA0019.jpg" data-lightbox="fotos"><img class="img-fluid" src="assets/img/IMG-20180519-WA0019.jpg"></a></div>
+            </div>
         </div>
     </section>
+    <section data-aos="fade-up" data-aos-duration="700" data-aos-once="true" id="audio">
+        <div class="container content-section">
+            <h1>Audio</h1><iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/994363492&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/485970312&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true" width="100%" height="166" frameborder="no" scrolling="no"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></div>
+    </section>
+    <section data-aos="fade-up" data-aos-duration="700" data-aos-once="true" id="kontakt">
+        <div class="container content-section">
+            <h1>Kontakt</h1>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <p><strong>Cappella Nova Unterwalden</strong><br>Peter Scherer<br>Stadelstrasse 22<br>6373 Ennetbürgen<br>pscherer@sunrise.ch<br>077&nbsp;403 89 35<br></p>
+                </div>
+                <div class="col">
+                    <form data-bss-subject="Kontaktformular cappela-nova.ch" data-bss-recipient="6bb159ad776b0471662ea5e084558014">
+                        <div class="form-group"><label>Name</label><input class="form-control" type="text" required=""></div>
+                        <div class="form-group"><label>E-Mail</label><input class="form-control" type="email" required=""></div>
+                        <div class="form-group"><label>Nachricht</label><textarea class="form-control" required=""></textarea></div><button class="btn btn-outline-dark btn-lg" type="submit">Senden</button></form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Sitemap</h3>
+                        <ul>
+                            <li><a href="#top">home</a></li>
+                            <li><a href="#termine">Termine</a></li>
+                            <li><a href="#about">Über uns</a></li>
+                            <li><a href="#fotos">Fotos</a></li>
+                            <li><a href="#audio">Audio</a></li>
+                            <li><a href="#kontakt">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item text">
+                        <h3>Impressum</h3>
+                        <p><strong>Cappella Nova Unterwalden</strong><br>Ennetbürgen</p>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Cappella Nova Unterwalden...</h3>
+                        <p>...ist ein Projekt-Ensemble, das jährlich mehrmals an verschiedenen Orten, besonders aber in der Innerschweiz auftritt. Seine Mitglieder sind&nbsp; Gesangs – Studierende, Sängerinnen und Sänger, Lehrerinnen und Lehrer mit professioneller
+                            Gesangsausbildung.<br></p>
+                    </div>
+                    <div class="col item social"><a href="https://www.facebook.com/capellanovauw" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="https://soundcloud.com/user-475109164" target="_blank"><i class="fab fa-soundcloud"></i></a></div>
+                </div>
+                <p class="copyright">Cappella Nova Unterwalden © 2020</p>
+            </div>
+        </footer>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
